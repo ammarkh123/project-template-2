@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,471 +13,499 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Arvo&family=Encode+Sans+Semi+Condensed:wght@400;500;700&family=Open+Sans:wght@400;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab&family=Varela+Round&family=Work+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar&family=Arvo&family=Encode+Sans+Semi+Condensed:wght@400;500;700&family=Open+Sans:wght@400;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab&family=Varela+Round&family=Work+Sans:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
     <!-- the main css file  -->
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="main.js"></script>
 </head>
+
 <body>
-<!-- start header  -->
-<header>
-    <div class="container">
-        <a href="#" class="logo">
-            <img src="img/logo.png" alt="logo image">
-        </a>
-        <div class="nav">
-        <i class="fas fa-bars toggle-menue"></i>
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#services">Service</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="form">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        </div> <!--./nav-->
-    </div> <!--./container-->
-</header>
-<!-- end header  -->
-<!-- start home section  -->
-<div class="home" id="home">
-    <div class="overlay"></div>
-    <div class="home-title">
-        <div class="home-title-para">
-            <h1>hello world!</h1>
-            <h1>we are kasper, we make art.</h1>
-            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. 
-                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+    <!-- start header  -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="logo image">
+            </a>
+            <div class="nav">
+                <i class="fas fa-bars toggle-menue" onclick="viewTaps()"></i>
+                <ul>
+                    <li><a class="active" onclick="activeClick()" href="#home">Home</a></li>
+                    <li><a href="#services" onclick="activeClick()">Service</a></li>
+                    <li><a href="#portfolio" onclick="activeClick()">Portfolio</a></li>
+                    <li><a href="#about" onclick="activeClick()">About</a></li>
+                    <li><a href="#pricing" onclick="activeClick()">Pricing</a></li>
+                    <li><a href="#contact" onclick="activeClick()">Contact</a></li>
+                </ul>
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div> <!--./nav-->
+        </div> <!--./container-->
+    </header>
+    <!-- end header  -->
+    <!-- start home section  -->
+    <div class="home" id="home">
+        <img class="active-img" src="img/slider/bg1.jpg" id="bg1" alt="">
+        <img src="img/slider/bg2.jpg" id="bg2" alt="">
+        <img src="img/slider/bg3.jpg" id="bg3" alt="">
+        <div class="overlay"></div>
+        <div class="home-title">
+            <div class="home-title-para">
+                <h1>hello world!</h1>
+                <h1>we are kasper, we make art.</h1>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
                     Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem.
                     Mauris blandit aliquet elit, eget tincidunt.</p>
-        </div>
-    </div>
-    <i class="fas fa-angle-left change-background fa-2x left"></i>
-    <i class="fas fa-angle-right change-background fa-2x right"></i>
-    <ul class="bullets">
-        <li></li>
-        <li class="active"></li>
-        <li></li>
-    </ul>
-</div>
-<!-- end home section  -->
-<!-- start services section  -->
-<div class="service pd-y" id="services">
-    <div class="container">
-        <div class="special-head pd-y">
-            <h2 class="special-head-title">services</h2>
-            <p class="special-head-para">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
-        </div>
-        <div class="services-content">
-            <div class="cont">
-                <i class="fa-solid fa-tv fa-3x"></i>
-                <div class="section-disc">
-                    <h2 class="sec-title">Vorem amet intuitive</h2>
-                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
-                </div>
-            </div>
-            <div class="cont">
-                <i class="fa-solid fa-gear fa-3x"></i>
-                <div class="section-disc">
-                    <h2 class="sec-title">Vorem amet intuitive</h2>
-                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
-                </div>
-            </div>
-            <div class="cont">
-                <i class="fa-solid fa-pen-ruler fa-3x"></i>
-                <div class="section-disc">
-                    <h2 class="sec-title">Vorem amet intuitive</h2>
-                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
-                </div>
-            </div>
-            <div class="cont">
-                <i class="fa-solid fa-camera fa-3x"></i>
-                <div class="section-disc">
-                    <h2 class="sec-title">Vorem amet intuitive</h2>
-                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
-                </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- end services section  -->
-<!-- start design -->
-<div class="design pd-y">
-    <div class="design-content">
-        <img src="img/about.png" alt="">
-        <div class="design-title">
-            <h2>our designs comes with... </h2>
-            <ul>
-                <li>responsive design</li>
-                <li>modern and clean design</li>
-                <li>clean code</li>
-                <li>browser friendly</li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- end design -->
-<!-- start-comp-services -->
-<div class="comp-services" id="portfolio">
-    <div class="special-head pd-y">
-        <h2 class="special-head-title">services</h2>
-        <p class="special-head-para">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
-    </div>
-    <div class="comp-services-headers">
-        <ul>
-            <li class="active">all</li>
-            <li>app</li>
-            <li>photography</li>
-            <li>web</li>
-            <li>print</li>
+        <i class="fas fa-angle-left change-background fa-2x left"></i>
+        <i class="fas fa-angle-right change-background fa-2x right"></i>
+        <ul class="bullets">
+            <li class="active" onclick="movebk('bg1')"></li>
+            <li onclick="movebk('bg2')"></li>
+            <li onclick="movebk('bg3')"></li>
         </ul>
     </div>
-    <div class="comp-services-images">
-        <div class="image">
-            <img src="img/portfolio/portfolio-1.jpg" alt="">
-            <div class="title">
-                <h3>awesome image</h3>
-                <p>photography</p>
+    <!-- end home section  -->
+    <!-- start services section  -->
+    <div class="service pd-y" id="services">
+        <div class="container">
+            <div class="special-head pd-y">
+                <h2 class="special-head-title">services</h2>
+                <p class="special-head-para">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                    blandit aliquet elit, eget tincidunt.</p>
             </div>
-        </div>
-        <div class="image">
-            <img src="img/portfolio/portfolio-2.jpg" alt="">
-            <div class="title">
-                <h3>awesome image</h3>
-                <p>photography</p>
-            </div>
-        </div>
-        <div class="image">
-            <img src="img/portfolio/portfolio-3.jpg" alt="">
-            <div class="title">
-                <h3>awesome image</h3>
-                <p>photography</p>
-            </div>
-        </div>
-        <div class="image">
-            <img src="img/portfolio/portfolio-4.jpg" alt="">
-            <div class="title">
-                <h3>awesome image</h3>
-                <p>photography</p>
-            </div>
-        </div>
-        <div class="image">
-            <img src="img/portfolio/portfolio-4.jpg" alt="">
-            <div class="title">
-                <h3>awesome image</h3>
-                <p>photography</p>
-            </div>
-        </div>
-        <div class="image">
-            <img src="img/portfolio/portfolio-3.jpg" alt="">
-            <div class="title">
-                <h3>awesome image</h3>
-                <p>photography</p>
-            </div>
-        </div>
-        <div class="image">
-            <img src="img/portfolio/portfolio-2.jpg" alt="">
-            <div class="title">
-                <h3>awesome image</h3>
-                <p>photography</p>
-            </div>
-        </div>
-        <div class="image">
-            <img src="img/portfolio/portfolio-1.jpg" alt="">
-            <div class="title">
-                <h3>awesome image</h3>
-                <p>photography</p>
+            <div class="services-content">
+                <div class="cont">
+                    <i class="fa-solid fa-tv fa-3x"></i>
+                    <div class="section-disc">
+                        <h2 class="sec-title">Vorem amet intuitive</h2>
+                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+                            eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+                    </div>
+                </div>
+                <div class="cont">
+                    <i class="fa-solid fa-gear fa-3x"></i>
+                    <div class="section-disc">
+                        <h2 class="sec-title">Vorem amet intuitive</h2>
+                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+                            eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+                    </div>
+                </div>
+                <div class="cont">
+                    <i class="fa-solid fa-pen-ruler fa-3x"></i>
+                    <div class="section-disc">
+                        <h2 class="sec-title">Vorem amet intuitive</h2>
+                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+                            eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+                    </div>
+                </div>
+                <div class="cont">
+                    <i class="fa-solid fa-camera fa-3x"></i>
+                    <div class="section-disc">
+                        <h2 class="sec-title">Vorem amet intuitive</h2>
+                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+                            eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <a href="#" class="more">more</a>
-</div>
-<!-- end-comp-services -->
-<!-- start video -->
-<div class="video">
-    <video autoplay muted loop>
-        <source src="video/Robin - 21723.mp4" type="video/mp4" />
-    </video>
-    <div class="text">
-        <h2>super awesome video here</h2>
-        <p>its all you need</p>
-        <button>see more</button>
-    </div>
-</div>
-<!-- end video -->
-<!-- start about  -->
-<div class="about" id="about">
-    <div class="container">
-        <div class="special-head pd-y">
-            <h2 class="special-head-title">about us</h2>
-            <p class="special-head-para">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
-        </div>
-        <div class="image">
+    <!-- end services section  -->
+    <!-- start design -->
+    <div class="design pd-y">
+        <div class="design-content">
             <img src="img/about.png" alt="">
+            <div class="design-title">
+                <h2>our designs comes with... </h2>
+                <ul>
+                    <li>responsive design</li>
+                    <li>modern and clean design</li>
+                    <li>clean code</li>
+                    <li>browser friendly</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-<!-- end about  -->
-<!-- start stats  -->
-<div class="stats">
-    <div class="container">
-        <div class="box">
-            <i class="fas fa-mug-hot"></i>
-            <div class="number">1.236</div>
-            <p>coffee drinks</p>
+    <!-- end design -->
+    <!-- start-comp-services -->
+    <div class="comp-services" id="portfolio">
+        <div class="special-head pd-y">
+            <h2 class="special-head-title">services</h2>
+            <p class="special-head-para">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit
+                aliquet elit, eget tincidunt.</p>
         </div>
-        <div class="box">
-            <i class="far fa-folder"></i>
-            <div class="number">256</div>
-            <p>completed projects</p>
-        </div>
-        <div class="box">
-            <i class="far fa-envelope"></i>
-            <div class="number">1.743</div>
-            <p>mail sent</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-trophy"></i>
-            <div class="number">17</div>
-            <p>awards recieved</p>
-        </div>
-    </div>
-</div>
-<!-- end stats  -->
-<!-- start skills -->
-<div class="our-skills">
-    <div class="container">
-        <div class="testimonial">
-            <div class="head">
-                <h2>testimonial</h2>
-                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
-            </div>
-            <div class="content">
-                <img src="img/test-1.webp" alt="">
-                <div class="text">
-                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
-                    <p>john doe, ceo</p>
-                </div>
-            </div>
-            <div class="content">
-                <img src="img/test-3.webp" alt="">
-                <div class="text">
-                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
-                    <p>john doe, ceo</p>
-                </div>
-            </div>
-            <ul class="bullets">
-                <li></li>
-                <li class="active"></li>
-                <li></li>
+        <div class="comp-services-headers">
+            <ul>
+                <li class="active">all</li>
+                <li>app</li>
+                <li>photography</li>
+                <li>web</li>
+                <li>print</li>
             </ul>
         </div>
-        <div class="skills">
-            <div class="head">
-                <h2>our skills</h2>
-                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
-            </div>
-            <div class="prog-holder">
-                <h4>html-5</h4>
-                <div class="prog">
-                    <span style="width: 90%" data-progress="90%"></span>
+        <div class="comp-services-images">
+            <div class="image">
+                <img src="img/portfolio/portfolio-1.jpg" alt="">
+                <div class="title">
+                    <h3>awesome image</h3>
+                    <p>photography</p>
                 </div>
             </div>
-            <div class="prog-holder">
-                <h4>css3</h4>
-                <div class="prog">
-                    <span style="width: 85%" data-progress="85%"></span>
+            <div class="image">
+                <img src="img/portfolio/portfolio-2.jpg" alt="">
+                <div class="title">
+                    <h3>awesome image</h3>
+                    <p>photography</p>
                 </div>
             </div>
-            <div class="prog-holder">
-                <h4>java script</h4>
-                <div class="prog">
-                    <span style="width: 75% " data-progress="75%"></span>
+            <div class="image">
+                <img src="img/portfolio/portfolio-3.jpg" alt="">
+                <div class="title">
+                    <h3>awesome image</h3>
+                    <p>photography</p>
                 </div>
             </div>
-            <div class="prog-holder">
-                <h4>php</h4>
-                <div class="prog">
-                    <span style="width: 80% " data-progress="80%"></span>
+            <div class="image">
+                <img src="img/portfolio/portfolio-4.jpg" alt="">
+                <div class="title">
+                    <h3>awesome image</h3>
+                    <p>photography</p>
                 </div>
             </div>
-       </div>
-    </div>
-</div>
-<!-- end skills -->
-<!-- start quote -->
-<div class="quote">
-    <div class="container">
-        <q>ACCUMSAN ID CURABITUR ET PORTITOR MAURIS BLANDIT DOLOR LOREM SOME EST OUR DONEC STIN LORTIOS</q>
-        <span>john doe</span>
-    </div>
-</div>
-<!-- end quote -->
-<!-- start pricing  -->
-<div class="pricing pd-y" id="pricing">
-    <div class="container">
-        <div class="special-head pd-y">
-            <h2 class="special-head-title">pricing</h2>
-            <p class="special-head-para">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
-        </div>
-        <div class="plans">
-            <div class="plan">
-                <div class="head">
-                    <span>basic</span>
-                    <h2>19</h2>
-                </div>
-                <ul>
-                    <li>Feature N0 1</li>
-                    <li>Feature N0 2</li>
-                    <li>Feature N0 3</li>
-                    <li>Feature N0 4</li>
-                </ul>
-                <div class="foot">
-                    <a href="#">buy now</a>
+            <div class="image">
+                <img src="img/portfolio/portfolio-4.jpg" alt="">
+                <div class="title">
+                    <h3>awesome image</h3>
+                    <p>photography</p>
                 </div>
             </div>
-            <div class="plan">
-                <div class="head">
-                    <span>premium</span>
-                    <h2>29</h2>
-                </div>
-                <ul>
-                    <li>Feature N0 1</li>
-                    <li>Feature N0 2</li>
-                    <li>Feature N0 3</li>
-                    <li>Feature N0 4</li>
-                </ul>
-                <div class="foot">
-                    <a href="#">buy now</a>
+            <div class="image">
+                <img src="img/portfolio/portfolio-3.jpg" alt="">
+                <div class="title">
+                    <h3>awesome image</h3>
+                    <p>photography</p>
                 </div>
             </div>
-            <div class="plan">
-                <div class="head">
-                    <span>pro</span>
-                    <h2>39</h2>
-                </div>
-                <ul>
-                    <li>Feature N0 1</li>
-                    <li>Feature N0 2</li>
-                    <li>Feature N0 3</li>
-                    <li>Feature N0 4</li>
-                </ul>
-                <div class="foot">
-                    <a href="#">buy now</a>
+            <div class="image">
+                <img src="img/portfolio/portfolio-2.jpg" alt="">
+                <div class="title">
+                    <h3>awesome image</h3>
+                    <p>photography</p>
                 </div>
             </div>
-            <div class="plan">
-                <div class="head">
-                    <span>plantinum</span>
-                    <h2>49</h2>
-                </div>
-                <ul>
-                    <li>Feature N0 1</li>
-                    <li>Feature N0 2</li>
-                    <li>Feature N0 3</li>
-                    <li>Feature N0 4</li>
-                </ul>
-                <div class="foot">
-                    <a href="#">buy now</a>
+            <div class="image">
+                <img src="img/portfolio/portfolio-1.jpg" alt="">
+                <div class="title">
+                    <h3>awesome image</h3>
+                    <p>photography</p>
                 </div>
             </div>
         </div>
-        <div class="contact">
-            <p>Contact us if you have special request</p>
-            <a href="#">contact us</a>
+        <a href="#" class="more">more</a>
+    </div>
+    <!-- end-comp-services -->
+    <!-- start video -->
+    <div class="video">
+        <video autoplay muted loop>
+            <source src="video/Robin - 21723.mp4" type="video/mp4" />
+        </video>
+        <div class="text">
+            <h2>super awesome video here</h2>
+            <p>its all you need</p>
+            <button>see more</button>
         </div>
     </div>
-</div>
-<!-- end pricing  -->
-<!-- start-subscripe -->
-<div class="subscripe">
-    <div class="container">
-        <div class="content">
-            <div class="cont">
-                <form action="#" method="post" class="subscription-form">
-                    <i class="fa fa-envelope fa-lg"></i>
-                    <input type="email" name="subscripe" placeholder="YOUR MAIL" required>
-                    <input type="submit" value="SUBSCRIPE" id="mail-submit">
+    <!-- end video -->
+    <!-- start about  -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="special-head pd-y">
+                <h2 class="special-head-title">about us</h2>
+                <p class="special-head-para">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                    blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <div class="image">
+                <img src="img/about.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end about  -->
+    <!-- start stats  -->
+    <div class="stats">
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-mug-hot"></i>
+                <div class="number">1.236</div>
+                <p>coffee drinks</p>
+            </div>
+            <div class="box">
+                <i class="far fa-folder"></i>
+                <div class="number">256</div>
+                <p>completed projects</p>
+            </div>
+            <div class="box">
+                <i class="far fa-envelope"></i>
+                <div class="number">1.743</div>
+                <p>mail sent</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-trophy"></i>
+                <div class="number">17</div>
+                <p>awards recieved</p>
+            </div>
+        </div>
+    </div>
+    <!-- end stats  -->
+    <!-- start skills -->
+    <div class="our-skills">
+        <div class="container">
+            <div class="testimonial">
+                <div class="head">
+                    <h2>testimonial</h2>
+                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+                        eget tincidunt.</p>
+                </div>
+                <div class="content">
+                    <img src="img/test-1.webp" alt="">
+                    <div class="text">
+                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+                            eget tincidunt.</p>
+                        <p>john doe, ceo</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="img/test-3.webp" alt="">
+                    <div class="text">
+                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+                            eget tincidunt.</p>
+                        <p>john doe, ceo</p>
+                    </div>
+                </div>
+                <ul class="bullets">
+                    <li></li>
+                    <li class="active"></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="skills">
+                <div class="head">
+                    <h2>our skills</h2>
+                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+                        eget tincidunt.</p>
+                </div>
+                <div class="prog-holder">
+                    <h4>html-5</h4>
+                    <div class="prog">
+                        <span style="width: 0" data-progress="90%"></span>
+                    </div>
+                </div>
+                <div class="prog-holder">
+                    <h4>css3</h4>
+                    <div class="prog">
+                        <span style="width: 0" data-progress="85%"></span>
+                    </div>
+                </div>
+                <div class="prog-holder">
+                    <h4>java script</h4>
+                    <div class="prog">
+                        <span style="width: 0" data-progress="75%"></span>
+                    </div>
+                </div>
+                <div class="prog-holder">
+                    <h4>php</h4>
+                    <div class="prog">
+                        <span style="width: 0" data-progress="80%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end skills -->
+    <!-- start quote -->
+    <div class="quote">
+        <div class="container">
+            <q>ACCUMSAN ID CURABITUR ET PORTITOR MAURIS BLANDIT DOLOR LOREM SOME EST OUR DONEC STIN LORTIOS</q>
+            <span>john doe</span>
+        </div>
+    </div>
+    <!-- end quote -->
+    <!-- start pricing  -->
+    <div class="pricing pd-y" id="pricing">
+        <div class="container">
+            <div class="special-head pd-y">
+                <h2 class="special-head-title">pricing</h2>
+                <p class="special-head-para">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                    blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <div class="plans">
+                <div class="plan">
+                    <div class="head">
+                        <span>basic</span>
+                        <h2>19</h2>
+                    </div>
+                    <ul>
+                        <li>Feature N0 1</li>
+                        <li>Feature N0 2</li>
+                        <li>Feature N0 3</li>
+                        <li>Feature N0 4</li>
+                    </ul>
+                    <div class="foot">
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="head">
+                        <span>premium</span>
+                        <h2>29</h2>
+                    </div>
+                    <ul>
+                        <li>Feature N0 1</li>
+                        <li>Feature N0 2</li>
+                        <li>Feature N0 3</li>
+                        <li>Feature N0 4</li>
+                    </ul>
+                    <div class="foot">
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="head">
+                        <span>pro</span>
+                        <h2>39</h2>
+                    </div>
+                    <ul>
+                        <li>Feature N0 1</li>
+                        <li>Feature N0 2</li>
+                        <li>Feature N0 3</li>
+                        <li>Feature N0 4</li>
+                    </ul>
+                    <div class="foot">
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="head">
+                        <span>plantinum</span>
+                        <h2>49</h2>
+                    </div>
+                    <ul>
+                        <li>Feature N0 1</li>
+                        <li>Feature N0 2</li>
+                        <li>Feature N0 3</li>
+                        <li>Feature N0 4</li>
+                    </ul>
+                    <div class="foot">
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <p>Contact us if you have special request</p>
+                <a href="#">contact us</a>
+            </div>
+        </div>
+    </div>
+    <!-- end pricing  -->
+    <!-- start-subscripe -->
+    <div class="subscripe">
+        <div class="container">
+            <div class="content">
+                <div class="cont">
+                    <form action="#" method="post" class="subscription-form">
+                        <i class="fa fa-envelope fa-lg"></i>
+                        <input type="email" name="subscripe" placeholder="YOUR MAIL" required>
+                        <input type="submit" value="SUBSCRIPE" id="mail-submit">
+                    </form>
+                </div>
+                <div class="text">
+                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blan dit aliquet elit,
+                        eget tincidunt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end-subscripe -->
+    <!-- start contact us -->
+    <div class="contact-us pd-y" id="contact">
+        <div class="container">
+            <div class="special-head pd-y">
+                <h2 class="special-head-title">contact us</h2>
+                <p class="special-head-para">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                    blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <div class="contact-details">
+                <form id="form" method="post" class="type-contact-details" mailto="ammar2632001@gmail.com">
+                    <input type="text" name="type-name" id="input-name-1" placeholder="your name" required />
+                    <input type="mail" name="type-mail" id="input-mail-1" placeholder="aaa@gmai.com" required />
+                    <textarea name="your-message" id="" cols="30" rows="10" placeholder="your message"></textarea>
+                    <input type="submit" value="send message">
                 </form>
-            </div>
-            <div class="text">
-                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blan dit aliquet elit, eget tincidunt.</p>
-            </div>
-        </div>
+                <div class="contact-numbers">
+                    <div class="cont">
+                        <h2>get in touch</h2>
+                        <p>+00 123.456.789</p>
+                        <p>+00 123.456.789</p>
+                    </div>
+                    <div class="cont">
+                        <h2>get in touch</h2>
+                        <p>+00 123.456.789</p>
+                        <p>+00 123.456.789</p>
+                    </div>
+                </div>
+            </div><!--./contact-details-->
+        </div><!--./container-->
     </div>
-</div>
-<!-- end-subscripe -->
-<!-- start contact us -->
-<div class="contact-us pd-y" id="contact">
-    <div class="container">
-        <div class="special-head pd-y">
-            <h2 class="special-head-title">contact us</h2>
-            <p class="special-head-para">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
-        </div>
-        <div class="contact-details">
-            <form id="form" method="post" class="type-contact-details" mailto="ammar2632001@gmail.com">
-                <input type="text" name="type-name" id="input-name-1" placeholder="your name" required/>
-                <input type="mail" name="type-mail" id="input-mail-1" placeholder="aaa@gmai.com" required/>
-                <textarea name="your-message" id="" cols="30" rows="10" placeholder="your message"></textarea>
-                <input type="submit" value="send message">
-            </form>
-            <div class="contact-numbers">
-                <div class="cont">
-                    <h2>get in touch</h2>
-                    <p>+00 123.456.789</p>
-                    <p>+00 123.456.789</p>
+    <!-- end contact us -->
+    <!-- start footer  -->
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
                 </div>
-                <div class="cont">
-                    <h2>get in touch</h2>
-                    <p>+00 123.456.789</p>
-                    <p>+00 123.456.789</p>
-                </div>
-            </div>
-        </div><!--./contact-details-->
-    </div><!--./container-->
-</div>
-<!-- end contact us -->
-<!-- start footer  -->
-<div class="footer">
-    <div class="container">
-        <div class="box">
-            <div class="logo">
-                <img src="img/logo.png" alt="">
-            </div>
-            <div class="social">
-                <p class="text">we are social</p>
-                <span></span>
-                <ul class="social-media">
-                    <li>
-                        <a href="https://facebook.com/">
-                            <i class="fa-brands fa-facebook-f fa-lg"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/">
-                            <i class="fa-brands fa-twitter fa-lg"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://accounts.google.com/">
-                            <i class="fa-brands fa-google-plus-g fa-lg"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://dribbble.com/">
-                            <i class="fa-brands fa-dribbble fa-lg"></i>
-                        </a>
-                    </li>
-                </ul>
-                <div class="foot">
-                    <p><span>©</span>all rights reserved 2022 <span>kasper </span>coded by <span>ammar atif</span></p>
+                <div class="social">
+                    <p class="text">we are social</p>
+                    <span></span>
+                    <ul class="social-media">
+                        <li>
+                            <a href="https://facebook.com/">
+                                <i class="fa-brands fa-facebook-f fa-lg"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+                                <i class="fa-brands fa-twitter fa-lg"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://accounts.google.com/">
+                                <i class="fa-brands fa-google-plus-g fa-lg"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dribbble.com/">
+                                <i class="fa-brands fa-dribbble fa-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="foot">
+                        <p><span>©</span>all rights reserved <span class="year"></span> <span>kasper </span>coded by
+                            <span>ammar
+                                atif</span>
+                        </p>
+                        <script>
+                            document.querySelector(".foot p .year").textContent = new Date().getFullYear();
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- end footer  -->
+    <!-- end footer  -->
 </body>
+
 </html>
